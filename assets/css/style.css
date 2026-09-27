@@ -1,0 +1,114 @@
+/*!
+ * Pages Styles
+ */
+
+/* General */
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+/* Home */
+.auth button a {
+    text-decoration: none;
+    color: white;
+}
+
+.auth button a:hover {
+    text-decoration: underline;
+}
+
+/* Blog*/
+.article-item td a {
+    text-decoration: none;
+    color: white;
+}
+
+.article-item td a:hover {
+    text-decoration: underline;
+}
+
+/* Chat */
+.chat-item td a {
+    text-decoration: none;
+    color: white;
+}
+
+.chat-item td a:hover {
+    text-decoration: underline;
+}
+
+/* Shop */
+.product-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-item a:hover {
+    text-decoration: underline;
+}
+
+/* Profile */
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+#sidebarToggle {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s;
+    }
+    .sidebar.show {
+        left: 0;
+    }
+    #sidebarToggle {
+        display: block;
+    }
+}
+
+.main-content {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1rem;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
